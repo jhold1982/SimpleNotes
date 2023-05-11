@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		642C444F2A0D74F600C24C96 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 642C444E2A0D74F600C24C96 /* KeychainAccess */; };
 		64F420B92A0D67D80003603D /* SimpleNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F420B82A0D67D80003603D /* SimpleNotesApp.swift */; };
 		64F420BB2A0D67D80003603D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F420BA2A0D67D80003603D /* ContentView.swift */; };
 		64F420BD2A0D67D90003603D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F420BC2A0D67D90003603D /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				642C444F2A0D74F600C24C96 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = SimpleNotes;
+			packageProductDependencies = (
+				642C444E2A0D74F600C24C96 /* KeychainAccess */,
+			);
 			productName = SimpleNotes;
 			productReference = 64F420B52A0D67D80003603D /* SimpleNotes.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 64F420AC2A0D67D80003603D;
+			packageReferences = (
+				642C444D2A0D74F600C24C96 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = 64F420B62A0D67D80003603D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,6 +282,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +310,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		642C444D2A0D74F600C24C96 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		642C444E2A0D74F600C24C96 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 642C444D2A0D74F600C24C96 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 64F420AD2A0D67D80003603D /* Project object */;
 }
